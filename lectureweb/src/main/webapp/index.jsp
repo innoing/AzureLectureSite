@@ -5,7 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <style>
- @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&display=swap');
+li, ul{
+    list-style: none; 
+    box-sizing:border-box;
+    margin:0;
+    padding:0; 
+}
+#nav-v2{
+    width:150px;
+    text-align:center;
+}
+
 .menu-v2{
 	line-height:2;
 	border:1px solid #222;
@@ -13,11 +24,11 @@
 }
 .menu-v2 .submenu{
 	position:absolute;
-	width:150px;
-	left:149px;
+	width:160px;
+	left:150px;
 	border:1px solid #222;
-	background-color:#222;
-	color:white;
+	background-color: #222;
+	color:white
 	top:-1px;
 	display:none;
 }
@@ -34,26 +45,15 @@
 body{
   font-family: 'Hahmlet', serif;
 }
+
 </style>
-<script>
-$(document).ready(function(){
-	$(document).ready(function(){
-		
-		//menu v2
-		$(".menu-v2").mouseover(function(){
-			$(this).children(".submenu").show(200);
-		});
-		$(".menu-v2").mouseleave(function(){
-			$(this).children(".submenu").hide(200);
-		});
-		
-	});
-	
-});
-</script>
+
 <title>코딩을 배우다 LectureWeb</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />   
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src = "http://home.yspersonal.com/JS/jquery-1.12.3.js" type="text/javascript"></script>
+<script src = "http://home.yspersonal.com/JS/jquery-3.6.1.min.js" type="text/javascript"></script>
+<script src = "./JS/script.js" type="text/javascript"></script>
 <link rel="stylesheet" href="./BS/bootstrap.min.css">
 <link rel="stylesheet" href="./BS/bootstrap.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -112,7 +112,8 @@ home</span>홈</a></li>
 			</li>
 		</ul>
    </div>
-   <div class="col-lg-10">
+   
+   <div class="col-lg-10" style="padding: 30px" >
     <h1>추천 강의</h1>
     <hr>
     <h4>코딩하기 전 기초강의! </h4>
@@ -128,7 +129,8 @@ home</span>홈</a></li>
     <hr>
    </div>
   </div>
- </div>
+  </div>
+
  
  <hr>
  <div class="footer">
