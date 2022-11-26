@@ -51,7 +51,13 @@ li, ul{
 	color:#222;
 }
 
-
+.footer
+{
+  text-align: center;
+  background-color: lightyellow;
+  margin: 50px;
+  padding: 50px;
+}
 body{
   font-family: 'Hahmlet', serif;
 }
@@ -332,27 +338,170 @@ home</span>홈</a></li>
    </div>
    
    <div class="col-lg-10" style="padding: 30px" >
-    <h1>추천 강의</h1>
+    <h1 style="text-align: center;" >추천 강의</h1>
     <hr>
     <h4>코딩하기 전 기초강의! </h4>
     <hr>
-   <iframe width="260" height="170" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
-   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <table class="table">
+     <tr>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     </tr>
+     <tr>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     </tr>
+     <tr>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     </tr>
+   </table>
+   <hr>
     <h4>코딩 기초   </h4>
     <hr>
+     <table class="table">
+     <tr>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     </tr>
+     <tr>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     </tr>
+     <tr>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     </tr>
+   </table>
+   <hr>
     <h4>GitHub 연동</h4>
     <hr>
+     <table class="table">
+     <tr>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     </tr>
+     <tr>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     </tr>
+     <tr>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     </tr>
+   </table>
+   <hr>
     <h4>클라우드 강의</h4>
     <hr>
+     <table class="table">
+     <tr>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     <td>제목</td>
+     </tr>
+     <tr>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     <td>
+     <iframe  width="240" height="160" src="https://www.youtube.com/embed/TrC2x4N0XqY" 
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </td>
+     </tr>
+     <tr>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     </tr>
+   </table>
    </div>
   </div>
   </div>
 
- 
  <hr>
  <div class="footer">
-  
+   <h6>Last Updated: </h6>
  </div>
 </body>
 </html>
