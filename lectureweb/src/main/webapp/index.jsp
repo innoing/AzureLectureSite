@@ -204,49 +204,6 @@ body{
 }
 </style>
 <script>
-/*
-var burger = $('.menu-trigger');
-
-burger.each(function (index) {
-  var $this = $(this);
-
-  $this.on('click', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active-' + (index + 1));
-  })
-});
-
-var h = 0;
-
-$(burger).on("click", function () {
-  if (h == 0) {
-		  $('.ham-con').animate({
-			  right: '0',
-			  opacity: 1
-		  }, 500);
-		  $(this).addClass('active-1');
-		  h++;
-	  } else if (h == 1) {
-		  $('.ham-con').animate({
-			  right: '-20%',
-			  opacity: 0
-		  }, 500);
-		  $(this).removeClass('active-1');
-		  h--;
-	  }
-	  $(window).scroll(function() {
-		  sct = $(window).scrollTop();
-    if(sct>30){
-      $('.ham-con').css({
-        opacity: 0,
-        right :'-20%'
-      }, 500);
-      $(burger).removeClass('active-1');
-      h=0;
-    }
-  });
-})
-*/
 </script>
 </head>
 <body>
@@ -283,56 +240,6 @@ $(burger).on("click", function () {
  <div class="container-fluid" style="margin-top:10px"> <!-- container-fluid 꽉체우기 -->
   <div class="row">
    <div class="col-lg-2">
-   <!-- 
-   <li class="ham-btn">
-     <a class="menu-trigger" href="#">
-       <span></span>
-       <span></span>
-       <span></span>
-    
-     
-   </li>
-   -->
-   <!-- 
-   <div class="ham-con">
-    <div id="ham-menu-wrap">
-      <div class="ham-menu mt-5">
-        <li><a href="#">유형<i class="bi bi-caret-down-fill"><</i></a>
-				<ul class="ham-sub-menu">
-					<li><a href="#">과목</a></li>
-					<li><a href="#">챌린지</a></li>
-					<li><a href="#">테스트</a></li>
-				</ul>
-			</li>
-			<li><a href="#">분야<i class="bi bi-caret-down-fill"><</i></a>
-				<ul class="ham-sub-menu">
-					<li><a href="#">기초</a></li>
-					<li><a href="#">응용</a></li>
-					<li><a href="#">Web</a></li>
-					<li><a href="#">데이터분석</a></li>
-					<li><a href="#">모바일</a></li>
-				</ul>
-			</li>
-			<li><a href="#">언어<i class="bi bi-caret-down-fill"><</i></a>
-				<ul class="ham-sub-menu">
-					<li><a href="#">C#</a></li>
-					<li><a href="#">Java</a></li>
-					<li><a href="#">C++</a></li>
-					<li><a href="#">Python</a></li>
-				</ul>
-			</li>
-			<li><a href="#">난이도<i class="bi bi-caret-down-fill"><</i></a>
-				<ul class="ham-sub-menu">
-					<li><a href="#">입문</a></li>
-					<li><a href="#">초급</a></li>
-					<li><a href="#">중급</a></li>
-					<li><a href="#">고급</a></li>
-				</ul>
-			</li>
-      </div>
-    </div>
-   </div>
-   -->
     <ul id="nav-v2">
 			<li class="menu-v2"><a href="#">유형</a>
 				<ul class="submenu">
@@ -382,9 +289,8 @@ $(burger).on("click", function () {
      </tr>
      <tr>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/uba8ArZx2i4" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/Computer_History.jpg"
+     width="300" height="200">
      </td>
      <td>
     <iframe width="240" height="160" src="https://www.youtube.com/embed/bls_GjX-4U8" 
@@ -414,31 +320,31 @@ $(burger).on("click", function () {
      </tr>
      <tr>
      <td>
-   <iframe width="240" height="160" src="https://www.youtube.com/embed/ffENjt7aEdc" 
+   <iframe width="300" height="200" src="https://www.youtube.com/embed/ffENjt7aEdc" 
    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/ueYLF0NIHkE" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/ueYLF0NIHkE" 
      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-    <iframe width="240" height="160" src="https://www.youtube.com/embed/kWiCuklohdY" 
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/kWiCuklohdY" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-    <iframe width="240" height="160" src="https://www.youtube.com/embed/0h7d7sLguKw" 
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/0h7d7sLguKw" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      </tr>
      <tr>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-      <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+      <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
      </tr>
      
    </table>
@@ -454,31 +360,31 @@ $(burger).on("click", function () {
      </tr>
      <tr>
      <td>
-    <iframe width="240" height="160" src="https://www.youtube.com/embed/J44d_ynAqNY" 
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/J44d_ynAqNY" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height= "160" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
+     <iframe width="300" height= "200" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
      title="YouTube video player" frameborder="0" 
      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
       <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/EAYlckSaviI" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/EAYlckSaviI" 
      title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      </tr>
      <tr>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-      <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td> 
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+      <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td> 
      </tr>
    </table>
    <hr>
@@ -493,31 +399,31 @@ $(burger).on("click", function () {
      </tr>
      <tr>
      <td>
-    <iframe width="240" height="160" src="https://www.youtube.com/embed/PQsJR8ci3J0" 
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/PQsJR8ci3J0" 
     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/XbvdLjUM9ng" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/XbvdLjUM9ng" 
      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/LPT7v69guVY" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/LPT7v69guVY" 
      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      <td>
-     <iframe width="240" height="160" src="https://www.youtube.com/embed/a8MckiothGc" 
+     <iframe width="300" height="200" src="https://www.youtube.com/embed/a8MckiothGc" 
      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
      clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
      </td>
      </tr>
      <tr>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-     <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
-      <td><input type="button" style="width: 240px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+     <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
+      <td><input type="button" style="width: 300px;" class="form-control mr-sm-2 bg-warning" value="더 보고 싶다면.." onclick="location.href='#'" /></td>
      </tr>
    </table>
    <hr>
