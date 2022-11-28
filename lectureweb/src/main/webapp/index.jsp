@@ -293,14 +293,12 @@ body{
      width="300" height="200">
      </td>
      <td>
-    <iframe width="240" height="160" src="https://www.youtube.com/embed/bls_GjX-4U8" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/Computer_Enginnering.jpg.png"
+     width="300" height="200">
      </td>
      <td>
-     <<iframe width="240" height="160" src="https://www.youtube.com/embed/H8fUXEA3_7A" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src= "./image/Coding_History.png"
+     width="300" height="200">
      </td>
      </tr>
      <tr>
@@ -320,24 +318,20 @@ body{
      </tr>
      <tr>
      <td>
-   <iframe width="300" height="200" src="https://www.youtube.com/embed/ffENjt7aEdc" 
-   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-   clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src= "./image/Html_CSS_Javascript.png"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/ueYLF0NIHkE" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src= "./image/CLang.png"
+     width="300" height="200">
      </td>
      <td>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/kWiCuklohdY" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/Python.png"
+     width="300" height="200">
      </td>
      <td>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/0h7d7sLguKw" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/Swift.png"
+     width="300" height="200">
      </td>
      </tr>
      <tr>
@@ -360,24 +354,20 @@ body{
      </tr>
      <tr>
      <td>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/J44d_ynAqNY" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/JavaSwing.png"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height= "200" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src= "./image/csharp.png"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/A7TEpoMN5o8" 
-     title="YouTube video player" frameborder="0" 
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/csharp.png"
+     width="300" height="200">
      </td>
       <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/EAYlckSaviI" 
-     title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <img src= "./image/youtubepython.png"
+     width="300" height="200">
      </td>
      </tr>
      <tr>
@@ -399,24 +389,20 @@ body{
      </tr>
      <tr>
      <td>
-    <iframe width="300" height="200" src="https://www.youtube.com/embed/PQsJR8ci3J0" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src= "./image/GITHUB.PNG"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/XbvdLjUM9ng" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src= "./image/vs_github.png"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/LPT7v69guVY" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src= "./image/eclipse_github.png"
+     width="300" height="200">
      </td>
      <td>
-     <iframe width="300" height="200" src="https://www.youtube.com/embed/a8MckiothGc" 
-     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     <img src= "./image/pycharm_github.png"
+     width="300" height="200">
      </td>
      </tr>
      <tr>
