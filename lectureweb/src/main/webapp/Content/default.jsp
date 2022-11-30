@@ -4,6 +4,8 @@
 <div class="container-fluid" style="margin-top:10px"> <!-- container-fluid 꽉체우기 -->
   <div class="row">
    <div class="col-lg-2">
+   <!-- 
+      <div class="sidebar">
     <ul id="nav-v2">
 			<li class="menu-v2"><a href="#">유형</a>
 				<ul class="submenu">
@@ -39,7 +41,8 @@
 			</li>
 		</ul>
    </div>
-   
+   -->
+   </div>
    <div class="col-lg-10" style="padding: 30px" >
     <h1 style="text-align: center;" >추천 강의</h1>
     <hr>

@@ -27,25 +27,8 @@ li, ul{
     margin:0;
     padding:0; 
 }
-#nav-v2{
-    width:150px;
-    text-align:center;
-}
 
-.menu-v1{
-	line-height:2;
-}
-.menu-v1:hover{background-color:#000;}
-.menu-v1:hover>a{color:white;font-weight:bold;}
-.menu-v1 .submenu{
-	margin-top:7px;
-	background-color:#fff;
-	display:none;
-}
-.menu-v1 .submenu li:hover{
-	background-color:#000;color:white;font-weight:bold;
-}
-
+/*
 .menu-v2{
 	line-height:2;
 	border:1px solid #222;
@@ -69,6 +52,7 @@ li, ul{
 	background-color:white;
 	color:#222;
 }
+*/
 
 .footer
 {
@@ -81,138 +65,65 @@ body{
   font-family: 'Hahmlet', serif;
 }
 
-.ham-con{
-  width: 30%;
-  height: 1000px;
-  background-color: rgba(224, 224, 224, 0.8);
-  position: fixed;
-  top:70px;
-  right:-20%;
-  color:#505050;
-  z-index: 99;
-  opacity: 0;
-}
 
-.ham-menu ul {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.ham-menu ul.ham-top-menu li {
-  position: relative;
-  float: left;
-  width: 100%;
-  list-style-type: none;
-  font-size: 18px;
-}
-
-.ham-menu ul.ham-top-menu li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  line-height: 50px;
-  text-indent: 20px;
-  color: #000;
-  background-color: #fff;
-  text-decoration: none;
-}
-
-.ham-menu ul.ham-top-menu li a:hover {
-  background: #eee;
-}
-
-.ham-menu ul.ham-top-menu li .ham-sub-menu a {
-  position: relative;
-  float: left;
-  display: block;
-  width: 100%;
-  z-index: 99;
-  background: #F7F7F7;
-}
-
-.ham-menu ul.ham-top-menu li .ham-sub-menu a:hover {
-  background: #444;
-  color: #fff;
-}
-
-.menu-trigger
-{
-  margin: 10px 25px;
-  position: relative;
-  width: 30px;
-  height: 25px
-}
-
-.menu-trigger:hover span:nth-of-type(1)
-{
-  background-color: #444;
-}
-
-.menu-trigger:hover span:nth-of-type(2)
-{ 
-  background-color: #444;
-}
-
-.menu-trigger:hover span:nth-of-type(3)
-{ 
-  background-color: #444;
-}
-
-.menu-trigger, .menu-trigger-span 
-{
-  display: inline-block;
-  transition: all. 4s;
-  box-sizing: border-box;
-}
-
-.menu-trigger span
-{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: rgb(124, 124, 125);
-  border-radius: 4px
-}
-
-.menu-trigger span:nth-of-type(1)
-{ 
-  top: 0;
-}
-
-.menu-trigger span:nth-of-type(2)
-{ 
-  top: 11px;
-}
-
-.menu-trigger span:nth-of-type(3)
-{ 
-  bottom: 0;
-}
-
-.menu-trigger.active-1 span:nth-of-type(1) 
-{
-  -webkit-transform: translateY (10px) rotate (-45deg);
-  transform: translateY(10px) rotate(-45deg);
-}
-
-.menu-trigger.active-1 span:nth-of-type(2)
- {
-  opacity: 0;
-}
-
-.menu-trigger.active-1 span:nth-of-type(3) 
-{
-  -webkit-transform: translateY(-10px) rotate(45deg);
-  transform: translateY(-10px) rotate(45deg);
-}
+input[id="menuicon"] {display:none;}
+input[id="menuicon"] + label {display:block;margin:20px;width:40px;height:40px;position:relative;cursor:pointer;}
+input[id="menuicon"] + label span {display:block;position:absolute;width: 100%;height:5px;border-radius:30px;background:#000;transition:all .35s;}
+input[id="menuicon"] + label span:nth-child(1) {top:0;}
+input[id="menuicon"] + label span:nth-child(2) {top:50%;transform:translateY(-50%);} /* 비슷하게 사용할 수 있는 style top:calc(50% - 2.5px); margin-top:-2.5px;*/
+input[id="menuicon"] + label span:nth-child(3) {bottom:0;}
+input[id="menuicon"]:checked + label {z-index:2;}
+input[id="menuicon"]:checked + label span {background:#fff;}
+input[id="menuicon"]:checked + label span:nth-child(1) {top:50%;transform:translateY(-50%) rotate(45deg);}
+input[id="menuicon"]:checked + label span:nth-child(2) {opacity:0;}
+input[id="menuicon"]:checked + label span:nth-child(3) {bottom:50%;transform:translateY(50%) rotate(-45deg);}
+div[class="sidebar"] {
+   width:300px;
+   padding: 70px 80px 50px 40px; 
+   height:100%;
+   background:#222;
+   position:fixed; 
+   top:0;
+   left:-300px;
+   z-index:1;
+   transition:all .35s;
+ }
+input[id="menuicon"]:checked + label + div {left:0;}
 </style>
 <script>
 </script>
 </head>
 <body>
  <nav class="navbar navbar-expand-md bg-warning navbar-light">
+  <input type="checkbox" id="menuicon">
+   <label for="menuicon">
+	   <span></span>
+	   <span></span>
+	   <span></span>
+  </label>
+  
+  <div class="sidebar">
+      <hr> 
+      <ul>
+	  <hr>
+			<ul class="menu-v2">
+			<li><h6 style="color: white;"><a href="#">코딩하기 전 기초강의</a></h6>
+	
+			</li>
+			</ul>
+	 <hr>
+			<ul class="menu-v2">
+			<li><h6 style="color: white;"><a href="#">코딩 기초</a></h6>
+			</li>
+			</ul>
+	<hr>
+			<ul class="menu-v2">
+			<li><h6 style="color: white;"><a href="#">Java, C#, C++ 강의</a></h6>
+			</li>
+			</ul>
+      </ul>
+  </div>
+
   <a class="navbar-brand" href="./main.do?page=main">코딩을 배우다</a>
   <div class="navbar-collapse">
   <ul class="navbar-nav">
@@ -223,6 +134,7 @@ body{
   홈
   </a>
   </li>
+  <!-- 
   <li class="menu-v1"><a class="nav-link" href="#">게시판</a>
   <ul class="submenu">
 		<li><a href="#">추천강의</a></li>
@@ -232,6 +144,7 @@ body{
 		<li><a href="#">난이도</a></li>
  </ul>
   </li>
+ -->
   </ul>
   
   <ul class="navbar-nav ml-auto">

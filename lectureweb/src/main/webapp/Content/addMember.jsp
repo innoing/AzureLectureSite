@@ -71,38 +71,6 @@
          </div>
       </div>
       <div class="form-group row">
-         <label class="col-sm-2">우편번호</label>
-         <div class="col-sm-3">
-            <input name="zipcode" class="from-control" placeholder="우편번호">
-            <input type="button" onclick="Postcode()" value="우편번호 찾기"><br>
-         </div>
-      </div>
-      <div class="form-group row">
-         <label class="col-sm-2">도로명주소</label>
-         <div class="col-sm-3">
-            <input name="roadAddress" class="from-control" placeholder="도로명주소">
-         </div>
-      </div>
-      <div class="form-group row">
-         <label class="col-sm-2">지번주소</label>
-         <div class="col-sm-3">
-            <input name="jibunAddress" class="from-control" placeholder="지번주소">
-         </div>
-      </div>
-      <span id="guide" style="color:#999;display:none"></span>
-      <div class="form-group row">
-         <label class="col-sm-2">상세주소</label>
-         <div class="col-sm-3">
-            <input name="detailAddress" class="from-control" placeholder="상세주소">
-         </div>
-      </div>
-      <div class="form-group row">
-         <label class="col-sm-2">참고항목</label>
-         <div class="col-sm-3">
-            <input name="extraAddress" class="from-control" placeholder="참고항목">
-         </div>
-      </div>
-      <div class="form-group row">
          <div class="col-sm-offset-2 col-sm-10">
             <input type="submit" class="btn btn-primary" value="등록">
             <input type="reset" class="btn btn-warning" value="취소">

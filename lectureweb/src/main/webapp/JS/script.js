@@ -1,21 +1,18 @@
-$(document).ready(function(){
-		
-		//menu v1 
-	    $(".menu-v1").mouseover(function(){
-		   $(this).children(".submenu").stop().slideDown();
-	    });
-	    $(".menu-v1").mouseleave(function(){
-		   $(this).children(".submenu").stop().slideUp();
-	    });
-	    
-		//menu v2
-		$(".menu-v2").mouseover(function(){
-		  $(this).children(".submenu").show(200);
-		});
-
-		
-		$(".menu-v2").mouseleave(function(){
-			$(this).children(".submenu").hide(200);
-		});
-		
-	});
+  $(function () {
+	/*
+        $(".left_sub_menu").hide();
+        $(".has_sub").click(function () {
+            $(".left_sub_menu").fadeToggle(300);
+        });
+    */
+        // 왼쪽메뉴 드롭다운
+        $(".sidebar ul.submenu").hide();
+        $(".sidebar ul.menu-v2").click(function () {
+            $("ul", this).slideToggle(300);
+        });
+        // 외부 클릭 시 좌측 사이드 메뉴 숨기기
+        $('.overlay').on('click', function () {
+            $('.left_sub_menu').fadeOut();
+            $('.hide_sidemenu').fadeIn();
+        });
+    });
