@@ -4,7 +4,9 @@
 <c:import url="Content/default.jsp" var="defaultcontent"></c:import>
 <c:import url="Content/addMember.jsp" var="signupcontent"></c:import>
 <c:import url="Content/login.jsp" var="logincontent"></c:import>
-
+<c:import url="Content/SignupAfter.jsp" var="AfterSignupcontent"></c:import>
+<c:import url="Content/Search.jsp" var="Searchcontent"></c:import>
+<c:import url="Content/video.jsp" var="Videocontent"></c:import>
 <!DOCTYPE html>
 <html>
 <head>
@@ -107,18 +109,24 @@ input[id="menuicon"]:checked + label + div {left:0;}
       <ul>
 	  <hr>
 			<ul class="menu-v2">
-			<li><h6 style="color: white;"><a href="#">코딩하기 전 기초강의</a></h6>
+			<li><h6 style="color: white;"><a href="index.jsp?page=video&name=beforebasiclecture">코딩하기 전 기초강의</a></h6>
 	
 			</li>
 			</ul>
-	 <hr>
+	  <hr>
 			<ul class="menu-v2">
-			<li><h6 style="color: white;"><a href="#">코딩 기초</a></h6>
+			<li><h6 style="color: white;"><a href="index.jsp?page=video&name=basiccoding">코딩 기초</a></h6>
+			</li>
+			</ul>
+	  <hr>
+			<ul class="menu-v2">
+			<li><h6 style="color: white;"><a href="index.jsp?page=video&name=jclecture">Java, C#, C++ 강의</a></h6>
 			</li>
 			</ul>
 	<hr>
-			<ul class="menu-v2">
-			<li><h6 style="color: white;"><a href="#">Java, C#, C++ 강의</a></h6>
+	
+	       	<ul class="menu-v2">
+			<li><h6 style="color: white;"><a href="index.jsp?page=video&name=github">GitHub</a></h6>
 			</li>
 			</ul>
       </ul>
@@ -134,22 +142,28 @@ input[id="menuicon"]:checked + label + div {left:0;}
   홈
   </a>
   </li>
-  <!-- 
-  <li class="menu-v1"><a class="nav-link" href="#">게시판</a>
-  <ul class="submenu">
-		<li><a href="#">추천강의</a></li>
-		<li><a href="#">유형</a></li>
-		<li><a href="#">분야</a></li>
-		<li><a href="#">언어</a></li>
-		<li><a href="#">난이도</a></li>
- </ul>
-  </li>
- -->
   </ul>
-  
+ 
   <ul class="navbar-nav ml-auto">
-   <li class="nav-item"><a class="nav-link" href="./index.jsp?page=login">로그인</a></li>
-   <li class="nav-item"><a class="nav-link" href="./main.do?page=4">검색</a></li>
+  <c:choose>
+  <c:when test="${sessionScope.id eq 'admin'}">
+    <li class="nav-item"><a class="nav-link" href="./index.jsp?page=">현재 사용자 이름: ${sessionScope.id} </a></li>
+  </c:when>
+  <c:otherwise>
+    <li class="nav-item"><a class="nav-link" href="./index.jsp?page=login">로그인</a></li>
+    <li class="nav-item"><a class="nav-link" href="./index.jsp?page=signup">회원가입</a></li>
+  </c:otherwise>
+  </c:choose>
+   <form id="searchform" action="search.do" method="POST">
+  <ul class="navbar-nav">
+  <li class="nav-item">
+   <input type="text" name="word" class="form-control" placeholder="검색" />
+  </li>
+  <li class="nav-item">
+   <input type="submit" class="btn btn-primary" value="검색" />
+  </li>
+  </ul>
+  </form>
   </ul>
   </div>
  </nav>
@@ -164,6 +178,15 @@ input[id="menuicon"]:checked + label + div {left:0;}
  <c:when test="${param.page eq 'signup' }">
   ${signupcontent}
  </c:when>
+  <c:when test="${param.page eq 'aftersignup' }">
+  ${AfterSignupcontent}
+ </c:when>
+ <c:when test="${param.page eq 'search' }">
+  ${Searchcontent}
+ </c:when>
+  <c:when test="${param.page eq 'video' }">
+  ${Videocontent}
+ </c:when>
  <c:otherwise>
   ${defaultcontent}
  </c:otherwise>
@@ -172,7 +195,8 @@ input[id="menuicon"]:checked + label + div {left:0;}
 
  <hr>
  <div class="footer">
-   <h6>Last Updated: </h6>
+   <h6>Last Updated: December 3rd, 2022 </h6>
+   <h6>This is not copyrighted because this is university homework. </h6>
  </div>
 </body>
 </html>

@@ -2,10 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div class="container">
-   <h1 class="form-signin-heading" style="text-align: center;">LectureWeb</h1>
+   <h1 class="form-signin-heading" style="text-align: center;">코딩을 배우다</h1>
    <hr>
-   <h3 class="form-signin-heading" style="text-align: center;">Please Sign up</h3>
-	<hr> 
    <form action="processAddMember.jsp" method="post">
       <div class="form-group row">
          <label class="col-sm-2">아이디</label>
