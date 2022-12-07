@@ -24,25 +24,6 @@
          </div>
       </div>
       <div class="form-group row">
-         <label class="col-sm-2">성별</label>
-         <div class="form-check form-check-inline">
-            <input type="radio" value="남자" name="gender" class="form-check-input" checked>
-            <label class="from-check-label">남자</label>
-         </div>
-         <div class="form-check form-check-inline">
-            <input type="radio" value="여자" name="gender" class="form-check-input">
-            <label class="from-check-label">여자</label>
-         </div>
-      </div>
-      <div class="form-group row">
-         <label class="col-sm-2">생일</label>
-         <div class="col-sm-3">
-            <input name="birthhyy" maxlength="4" size="6" class="form-group" placeholder="년(4자)" required>
-            <input name="birthhmm" maxlength="2" size="4" class="form-group" placeholder="월" required>
-            <input name="birthhdd" maxlength="2" size="4" class="form-group" placeholder="일" required>
-         </div>
-      </div>
-      <div class="form-group row">
          <label class="col-sm-2">이메일</label>
          <div class="col-sm-10">
             <input name="mail1" maxlength="50" required>@
