@@ -132,11 +132,11 @@ input[id="menuicon"]:checked + label + div {left:0;}
       </ul>
   </div>
 
-  <a class="navbar-brand" href="./main.do?page=main">코딩을 배우다</a>
+  <a class="navbar-brand" href="./index.jsp">코딩을 배우다</a>
   <div class="navbar-collapse">
   <ul class="navbar-nav">
   <li class="nav-item">
-  <a class="nav-link" href="./main.do?page=main">
+  <a class="nav-link" href="./index.jsp">
   <span class="material-symbols-outlined">home
   </span>
   홈
@@ -146,8 +146,8 @@ input[id="menuicon"]:checked + label + div {left:0;}
  
   <ul class="navbar-nav ml-auto">
   <c:choose>
-  <c:when test="${sessionScope.id eq 'admin'}">
-    <li class="nav-item"><a class="nav-link" href="./index.jsp?page=">현재 사용자 이름: ${sessionScope.id} </a></li>
+  <c:when test="${sessionScope.id ne null}">
+    <li class="nav-item">현재 사용자 이름: ${sessionScope.id}</li>
   </c:when>
   <c:otherwise>
     <li class="nav-item"><a class="nav-link" href="./index.jsp?page=login">로그인</a></li>
@@ -170,29 +170,56 @@ input[id="menuicon"]:checked + label + div {left:0;}
   
 <c:choose>
  <c:when test="${param.page eq 'main'}">
-   ${defaultcontent}
+  <c:choose>
+   <c:when test="${sessionScope.id eq null}">
+    ${defaultcontent}
+   </c:when>
+   <c:otherwise>
+    ${logincontent}
+   </c:otherwise>
+  </c:choose>
  </c:when>
  <c:when test="${param.page eq 'login'}">
+ <c:choose>
+ <c:when test="${sessionScope.id eq null}">
   ${logincontent}
+  </c:when>
+  <c:otherwise>
+  ${defaultcontent}
+  </c:otherwise>
+  </c:choose>
  </c:when>
- <c:when test="${param.page eq 'signup' }">
+ <c:when test="${param.page eq 'signup'}">
+ <c:choose>
+  <c:when test="${sessionScope.id eq null}">
   ${signupcontent}
+  </c:when>
+  <c:otherwise>
+  ${defaultcontent}
+  </c:otherwise>
+ </c:choose>
  </c:when>
-  <c:when test="${param.page eq 'aftersignup' }">
-  ${AfterSignupcontent}
+  <c:when test="${param.page eq 'video'}">
+  <c:choose>
+  <c:when test="${sessionScope.id ne null}">
+   ${Videocontent}
+  </c:when>
+  <c:otherwise>
+   ${logincontent}
+  </c:otherwise>
+  </c:choose>
  </c:when>
- <c:when test="${param.page eq 'search' }">
-  ${Searchcontent}
- </c:when>
-  <c:when test="${param.page eq 'video' }">
-  ${Videocontent}
+ <c:otherwise>
+ <c:choose>
+ <c:when test="${sessionScope.id eq null}">
+  ${logincontent}
  </c:when>
  <c:otherwise>
   ${defaultcontent}
  </c:otherwise>
+ </c:choose>
+ </c:otherwise>
 </c:choose>
-
-
  <hr>
  <div class="footer">
    <h6>Last Updated: December 3rd, 2022 </h6>
